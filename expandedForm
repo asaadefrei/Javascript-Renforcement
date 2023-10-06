@@ -1,0 +1,19 @@
+function expandedForm(num) {
+  if (isNaN(num) || num === null) {
+    return "Veuillez entrer un nombre valide.";
+  }
+  const numStr = num.toString();
+  const nums = numStr.split('');
+
+  const numsCaracteres = nums.map((element, index) => {
+    if (element !== '0') {
+      let puissance = Math.pow(10, nums.length - 1 - index);
+      let value = element * puissance;
+      return value.toString();
+    }
+    return null;
+  })
+
+  let chaine = numsCaracteres.filter((element) => element !== null);
+  return chaine.join(' + ')
+}
