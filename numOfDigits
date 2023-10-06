@@ -1,0 +1,3 @@
+function numOfDigits(num) {
+  return num ? num.toString().length : 0;
+}
