@@ -1,0 +1,19 @@
+function numInStr(arr) {
+  let nombres = "0123456789";
+  let nombre = nombres.split('');  
+  let resultats = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+    let chaine = arr[i];
+    
+    for (let j = 0; j < nombre.length; j++) {
+      let chiffre = nombre[j];
+      
+      if (chaine.includes(chiffre)) {
+        resultats.push(chaine); 
+        break; 
+      }
+    }
+  }
+  return resultats;
+}
