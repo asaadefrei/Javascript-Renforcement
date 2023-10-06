@@ -12,8 +12,8 @@ function expandedForm(num) {
       return value.toString();
     }
     return null;
-  })
+  }).
 
   let chaine = numsCaracteres.filter((element) => element !== null);
-  return chaine.join(' + ')
+  return chaine.join(' + ').
 }
