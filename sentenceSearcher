@@ -1,0 +1,3 @@
+function sentenceSearcher(str, search) {
+  return str.split('.').find((sentence) => sentence.includes(search));
+}
