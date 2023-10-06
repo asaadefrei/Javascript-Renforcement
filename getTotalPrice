@@ -1,0 +1,10 @@
+function getTotalPrice(list) {
+  let totalPrice = 0;
+
+  for (let index = 0; index < list.length; index++) {
+    const item = list[index];
+    totalPrice += item.quantity * item.price;
+  }
+
+  return totalPrice;
+}
